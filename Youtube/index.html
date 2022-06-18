@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #query{
+            width: 50%;
+            color:red;
+            height: 30px;
+            
+        }
+        #reults{
+            
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+    margin-top: 20px;
+        }
+        #btn{
+            background-color: brown;
+            color: white;
+            height: 30px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" placeholder="search videos" id="query"  >
+    <button id="btn" onclick="Search()">search videos</button>
+    <div id="results"></div>
+</body>
+</html>
+<script src="index.js"></script>
