@@ -9,3 +9,4 @@ function Remove(ele,index){
     localStorage.setItem("key_name",JSON.stringify(Array))
     window.location.reload()
 }
+// Splice function will take two arguements first arguement is starting index and second arguement is delete count
