@@ -1,0 +1,73 @@
+<!-- 1/7/22 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* background-color: orangered; */
+            background-color: black;
+        }
+        
+      #input_niks{
+ border-left: none;
+ border-top: none;
+ border-right:none ;
+ border-bottom: 1px solid black;
+ border-radius: 4px;
+ box-shadow: 2px 2px 2px 2px black;
+ width: 50%
+ ;
+ height: auto;
+ background-color: white;
+}
+#nav{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color:rgb(245, 71, 7);
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    /* box-shadow: 3px 3px 3px 3px white; */
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+ #btn{
+    background-color:orangered;
+    color: black;
+    height: 30px;
+    width: 100px;
+ }
+ .p{
+    color:rgb(245, 71, 7) ;
+    background-color: black;
+ }
+    </style>
+    
+</head>
+<body>
+    <div id="nav">
+        <input oninput="Search()" type="text" id="input_niks" placeholder="Search....⏭️">
+        
+        <p class="p">Trending</p>
+        <p class="p">History</p>
+        <p class="p">Your favourite</p>
+        <button id="btn">Youtube</button>
+        <!-- <p class="p">Youtube</p> -->
+    </div>
+   
+    <!-- append here -->
+    <div id="main"></div>
+</body>
+</html>
+<script src="index.js"></script>
