@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      /* *{
+        background-color: black;
+
+      } */
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      #order-form{
+        border: 50px solid white;
+        height: 300px;
+        width: 30%;
+        margin-top: 60px;
+        margin-left: 33%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px black;
+        background-color: white;
+        /* background-color: black; */
+      }
+      #form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 30%; here margin will not work and padding will be useful */
+        padding-top: 70px;
+        /* box-shadow: 2px 2px 2px 2px white;
+        border: 0.2 px solid black; */
+        /* gap: 2px; */
+        /* color: orangered; */
+        /* background-color: orangered; */
+        /* background-color: red; */
+
+      }
+      #confirm{
+        background-color:black;
+        color: white;
+        /* color: green; */
+        height: 30px;
+        font-size: larger;
+      }
+      #heading{
+        text-align: center;
+        color: red;
+      }
+      .tiku{
+        background-color: white;
+        color: black;
+      }
+      .heading{
+        text-align: center;
+      }
+      #navbar{
+        height: 40px;
+        width: 100%;
+        background-color: rgba(15, 10, 10, 0.349);
+        /* color: rgb(226, 72, 15); */
+        /* color: rgb(11, 196, 11); */
+        color: black;
+                display: flex;
+        justify-content: space-around;
+      }
+      .top{
+      margin-top: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <h3 class="top">login</h3>
+      <h3 class="top">Signup</h3>
+      <h3 class="top">Products</h3>
+      <h3 class="top"><a href="bucket.html">Bucket</a></h3>
+      </div>
+    <!-- <h1 id="heading">Thanks For having Coffee with us💕💕</h1>
+    <h1 class="heading">🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵🍵</h1> -->
+    <div id="order-form">
+      <form onsubmit="myorder()" action="" id="form">
+        <input type="text" name="" id="name" placeholder="name" class="tiku">
+        <input type="number" name="" id="number" placeholder="number" class="tiku">
+        <input type="text" name="" id="address" placeholder="address" class="tiku">
+        <input onclick="myorder(event)" type="submit" name="" id="confirm" class="tiku" value="Confirm">
+      </form>
+      <!--Add your form html element here-->
+      <!--In form, give #name,#number and #address as HTML id's to relevant input elements -->
+      <!-- confirm button with id "confirm" -->
+    </div>
+  </body>
+</html>
+<script src="./scripts/checkout.js"></script>

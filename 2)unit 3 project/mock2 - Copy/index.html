@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        /* background-color: black; */
+      }
+      #navbar{
+        height: 40px;
+        width: 100%;
+        background-color:black;
+        color: rgb(236, 71, 11);
+        /* color: white; */
+        display: flex;
+        justify-content: space-around;
+        
+      }
+      .top{
+      margin-top: 8px;
+      /* font-family: 'Times New Roman', Times, serif; */
+      font-size: larger;
+      }
+      #menu{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 4px;
+        margin-left: 8px;
+        /* background-color: rgb(243, 71, 9); */
+        /* height: 50px;
+        width: 30%; */
+      }
+      .photo{
+        height: 150px;
+        width: 65%;
+        margin-top: 3px;
+        margin-left: 10px;
+      }
+      .khatka{
+        background-color: black;
+        color: white;
+        height: 25px;
+        width: 120px;
+        border-radius: 5px;
+        /* box-shadow: 1px 1px 1px 1px orangered; */
+        margin-left: 30px;
+      }
+      .type{
+        margin-left: 55px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <h3 class="top">login</h3>
+      <h3 class="top">Signup</h3>
+      <h3 class="top">Products</h3>
+      <h3 class="top"><a href="bucket.html">Bucket</a></h3>
+      <!--Add navbar divs here-->
+      <!-- Link to bucket.html -->
+      <div id="">
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but like this "5" -->
+      </div>
+    </div>
+
+    <div id="menu">
+      <!--Show coffee list here in grid format-->
+      <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
